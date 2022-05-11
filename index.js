@@ -3,7 +3,11 @@ let response = function(query) {
     return response(query.data);
   }
   if (Array.isArray(query)) {
-    return response(query[0]);
+    let obj = [];
+    for (let i = 0; i < query.length; i++) {
+      obj.push(response(query[i]));
+    }
+    return obj
   }
   if (query.hasOwnProperty("attributes")) {
     return response(query.attributes);
