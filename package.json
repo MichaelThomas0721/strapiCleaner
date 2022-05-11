@@ -1,0 +1,22 @@
+{
+  "name": "strapi-cleaner",
+  "version": "1.0.0",
+  "description": "Cleans the data and attributes properties from strapi queries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelThomas0721/strapiCleaner.git"
+  },
+  "keywords": [
+    "strapi"
+  ],
+  "author": "Michael Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelThomas0721/strapiCleaner/issues"
+  },
+  "homepage": "https://github.com/MichaelThomas0721/strapiCleaner#readme"
+}
