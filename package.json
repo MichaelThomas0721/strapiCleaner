@@ -1,6 +1,6 @@
 {
   "name": "strapi-cleaner",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Cleans the data and attributes properties from strapi queries",
   "main": "index.js",
   "scripts": {
