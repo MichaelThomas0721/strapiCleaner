@@ -29,7 +29,7 @@ let query = function(query) {
   const splitter = splitted.slice(0,2).join('{'); //Join the first two elements of the array with '{' because it was removed
   splitted = splitted.slice(2); //Remove the first two elements of the array
   splitted.unshift(splitter); //Add the first two elements back to the array
-  splitted = splitted.join('{data {attributes {').replace(/(\})$(?=.*[}])/gms, '}}}'); //Join the array back together an add 'data {attributes {' at join points and replace '}' at the end of lines with '}}}' (closing tags)
+  splitted = splitted.join('{data {attributes {').replace(/(\})$(?=.*[}])/gms, '}}}').replace(/(\},)$(?=.*[},])/gms, '}}},'); //Join the array back together an add 'data {attributes {' at join points and replace '}' at the end of lines with '}}}' (closing tags)
   return splitted
 }
 
